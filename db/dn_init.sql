@@ -66,7 +66,7 @@ CREATE TABLE "order_history"
     "id"          SERIAL PRIMARY KEY,
     "quantity"    int           NOT NULL,
     "total_price" numeric(7, 2) NOT NULL,
-    "products"    json          NOT NULL
+    "products"    jsonb          NOT NULL
 );
 
 CREATE TABLE "user"
