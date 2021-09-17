@@ -9,7 +9,8 @@ import java.util.Objects;
 @Getter
 @Setter
 @ToString
-@RequiredArgsConstructor
+@AllArgsConstructor
+@NoArgsConstructor
 @Builder
 @Table(name = "\"user\"")
 @Entity
@@ -29,6 +30,7 @@ public class User {
   private String password;
 
   @Column(name = "enable", nullable = false)
+  @Builder.Default
   private Boolean enable = false;
 
   @Override

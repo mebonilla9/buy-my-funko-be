@@ -1,5 +1,6 @@
 package co.edu.umb.buymyfunkobe.model.entity;
 
+import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
 import com.vladmihalcea.hibernate.type.json.JsonType;
 import lombok.*;
 import org.hibernate.Hibernate;
@@ -13,10 +14,11 @@ import java.util.Objects;
 @Getter
 @Setter
 @ToString
-@RequiredArgsConstructor
+@AllArgsConstructor
+@NoArgsConstructor
 @Builder
 @Table(name = "order_history")
-@TypeDef(name = "json", typeClass = JsonType.class)
+@TypeDef(name = "json", typeClass = JsonBinaryType.class)
 @Entity
 public class OrderHistory {
   @Id
