@@ -15,7 +15,7 @@ public class BuyMyFunkoBeApplication {
   }
 
   @Bean
-  public WebMvcConfigurer corsConfigurer() {
+  protected WebMvcConfigurer corsConfigurer() {
     return new WebMvcConfigurer() {
       @Override
       public void addCorsMappings(CorsRegistry registry) {

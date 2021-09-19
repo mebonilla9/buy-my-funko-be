@@ -18,6 +18,7 @@ public class Category {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Column(name = "id", nullable = false)
+
   private Integer id;
 
   @Column(name = "name", nullable = false, length = 50)
@@ -25,8 +26,7 @@ public class Category {
 
   @ManyToOne
   @JoinColumn(name = "id_subcategory")
-  private Category idSubcategory;
-
+  private Category subCategory;
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;

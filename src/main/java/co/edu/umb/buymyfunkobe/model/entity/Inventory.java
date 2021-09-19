@@ -29,7 +29,7 @@ public class Inventory {
 
   @ManyToOne(optional = false)
   @JoinColumn(name = "id_product", nullable = false)
-  private Product idProduct;
+  private Product product;
 
   @Override
   public boolean equals(Object o) {

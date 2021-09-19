@@ -29,11 +29,11 @@ public class Shipping {
 
   @ManyToOne(optional = false)
   @JoinColumn(name = "id_address", nullable = false)
-  private Address idAddress;
+  private Address address;
 
   @ManyToOne(optional = false)
   @JoinColumn(name = "id_order_history", nullable = false)
-  private OrderHistory idOrderHistory;
+  private OrderHistory orderHistory;
 
   @Override
   public boolean equals(Object o) {

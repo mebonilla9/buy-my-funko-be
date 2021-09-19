@@ -36,11 +36,11 @@ public class Review {
 
   @ManyToOne(optional = false)
   @JoinColumn(name = "id_user", nullable = false)
-  private User idUser;
+  private User user;
 
   @ManyToOne(optional = false)
   @JoinColumn(name = "id_product", nullable = false)
-  private Product idProduct;
+  private Product product;
 
   @Override
   public boolean equals(Object o) {

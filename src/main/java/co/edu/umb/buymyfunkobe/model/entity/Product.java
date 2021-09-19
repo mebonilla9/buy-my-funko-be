@@ -33,7 +33,7 @@ public class Product {
 
   @ManyToOne(optional = false)
   @JoinColumn(name = "id_category", nullable = false)
-  private Category idCategory;
+  private Category category;
 
   @Override
   public boolean equals(Object o) {

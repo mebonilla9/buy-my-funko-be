@@ -22,11 +22,11 @@ public class UserAddress {
 
   @ManyToOne(optional = false)
   @JoinColumn(name = "id_user", nullable = false)
-  private User idUser;
+  private User user;
 
   @ManyToOne(optional = false)
   @JoinColumn(name = "id_address", nullable = false)
-  private Address idAddress;
+  private Address address;
 
   @Override
   public boolean equals(Object o) {
